@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testing</title>
+<script>
+const test = ( ) =>
+{
+  let x = frm.t1.value;
+
+  if(x%2==0)
+{
+  const z="It is an even number";
+ document.bgColor="#ff0000";
+ frm.t4.value=z;
+} 
+
+ else
+{
+  const z= "It is an odd number";
+  document.bgColor="#0000ff"
+  frm.t4.value=z;
+
+}
+
+
+}
+
+
+const cl = ( ) =>
+{
+   
+   frm.t1.value="";
+  frm.t4.value="";
+   document.bgColor="#ffffff";
+}
+
+</script>
+
+</head>
+<form name="frm">
+<label for N1>ENTER THE NUMBER TO CHECK</label>
+<input type="text" name="t1" value=""/>
+<br/>
+<br/>
+
+<label for Result>Even or Odd</label>
+<input type="text" name="t4" value=""/>
+<br/>
+<br/>
+
+
+<input type="button" name="b1" value="Check" onClick="test( )"/>
+<input type="button" name="b2" value="Reset" onClick="cl()"/>
+
+</form>
+</html>
